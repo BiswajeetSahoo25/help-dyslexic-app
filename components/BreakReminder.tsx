@@ -31,7 +31,7 @@ export default function BreakReminder({
       }).start();
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
     }
-  }, [isVisible]);
+  }, [isVisible, fadeAnim]);
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
